@@ -1,0 +1,23 @@
+# Données et modèles (gérés par DVC)
+data/
+models/
+*.pt
+*.onnx
+
+# MLflow
+mlruns/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+.env
+
+# Node
+frontend/node_modules/
+frontend/dist/
+
+# IDE
+.idea/
+.vscode/ 
