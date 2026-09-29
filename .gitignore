@@ -1,5 +1,6 @@
 # Données et modèles (gérés par DVC)
-data/
+/data/raw/asl_letters/
+/data/processed/
 models/
 *.pt
 *.onnx
