@@ -1,0 +1,6 @@
+outs:
+- md5: 3f8a96860d57d4d6b0cf0b6c2df9ea9a.dir
+  size: 22771593
+  nfiles: 3459
+  hash: md5
+  path: asl_letters
