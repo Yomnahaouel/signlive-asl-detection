@@ -1,8 +1,18 @@
 from fastapi import FastAPI, UploadFile
 from fastapi.responses import Response
+from fastapi.middleware.cors import CORSMiddleware
 from .schemas import HealthResponse, ModelMetadata, PredictionResponse, Detection, BoundingBox
+from fastapi import FastAPI, UploadFile, File, HTTPException
 
 app = FastAPI(title="SignLive API")
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:5173"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 CLASSES = [chr(i) for i in range(ord("A"), ord("Z") + 1)]
 
